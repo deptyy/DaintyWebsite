@@ -1,0 +1,274 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #9b52e463;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    
+}
+
+.nav-list a:hover {
+    color: #4e065d;
+
+}
+.navbar-center {
+    flex-grow: 1;
+    text-align: center;
+
+}
+.navbar-center img{
+    height: 200px;
+}
+.navbar-Search{
+    width: 200px;
+    height: 27px;
+    border-radius: 10px;
+    border: purple;
+}
+.page-container{
+    background-color: #d7c0e0;
+    
+}
+.image-section {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+.first-image{
+    width:250px;
+    height: 400px;
+    margin-top: 190px;
+
+
+}
+
+
+.middle-image {
+    width: 350px; 
+    height: 500px;
+    margin-top: 60px;
+    border-radius: 160px;
+    
+}
+.third-image{
+    width:250px;
+    height:300px;
+
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:c919c363;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.image-container:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-overlay h3 {
+    color: #fff;
+    font-size: 18px;
+}
+.BrandName{
+    font-family: "Lucida Console", monospace;
+    font-size: 50px;
+    justify-content: center;
+    display: flex;
+    font-weight: 900;
+    color: #3e074dbd;
+    margin-top: 350px;
+    margin-right: 40px;
+}
+/*Picture collage*/
+.collage {
+    display: flex;
+    align-items: center;
+    padding: 150px;
+}
+
+.big-image img {
+    max-width: 335px;
+
+}
+
+.small-images-top,
+.small-images-bottom {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.small-images-top img,
+.small-images-bottom img {
+    max-width: 100%;
+    margin: 15px;
+    width: 200px
+}
+
+
+.oval-container {
+    
+    width: 350px;
+    height: 400px;
+    background-color: #a16f8147;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    border-radius: 165px;
+    flex-direction: column;
+    padding: 30px;
+
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.oval-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.oval-button button {
+    width: 120px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid #290337;
+    border-radius: 30px; /* Half of the height */
+    color: #e7e1d8; /* Text color */
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 20px;
+
+}
+
+.oval-button button:hover {
+    transform: scale(1.1);
+    background-color: #4e065d;/* Solid color on hover */
+    color: white; /* Text color on hover */
+}
+
+/*carousel*/
+/* Reset some default styles */
+
+
+/* Reset some default styles */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Set the maximum width of the carousel */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.carousel-slide {
+    flex: 0 0 100%; /* Full width slide */
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.like-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease;
+}
+
+.like-button:hover {
+    transform: scale(1.2);
+    color: red;
+}
+
+.item-name,
+.item-price {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* ... (LOGIN) ... */
+
